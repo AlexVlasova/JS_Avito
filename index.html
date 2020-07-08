@@ -23,8 +23,13 @@
 	<meta name="theme-color" content="#ffffff">
 	<meta name="msapplication-TileColor" content="#00aba9">
 	<meta name="theme-color" content="#ffffff">
+
+	<!-- Загружаем до стилей, чтобы быстрее началась загрузка -->
+	<!-- defer - запускаем только после загрузки всей страницы -->
+	<script src="./js/script.js" defer></script>	
+
 	<link rel="stylesheet" href="./style/style.css">
-	<title>Avito Glo Academy</title>
+	<title>Avito</title>
 </head>
 
 <body>
@@ -136,6 +141,8 @@
 
 	</main>
 
+	<!-- Модальное окно для подачи объявления -->
+	<!-- id не используем, лучше писать два класса - один для стилей, другой для скрипта -->
 	<div class="modal modal__add hide">
 		<div class="modal__block">
 			<h2 class="modal__header">Подать Объявление</h2>
@@ -210,7 +217,7 @@
 		</div>
 	</div>
 
-
+	<!-- Модальное окно верстаем в конце, ибо оно и так не видно и верстка быстрее загрузится -->
 
 </body>
 
